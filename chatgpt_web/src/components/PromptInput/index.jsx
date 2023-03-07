@@ -19,7 +19,6 @@ export default function PromptInput({ prompt, onSubmit, loading, imgLoading }) {
 				placeholder='请输入问题'
 				autoSize></TextArea>
 			<Button disabled={imgLoading} loading={loading} onClick={() => handleBtnClick(1)} className='PromptInput-btn' color='primary'>提问</Button>
-			<Button disabled={loading} loading={imgLoading} onClick={() => handleBtnClick(2)} className='PromptInput-btn'>绘画</Button>
 		</div>
 	);
 }
