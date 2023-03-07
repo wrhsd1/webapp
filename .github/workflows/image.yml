@@ -25,8 +25,8 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v3
       with:
-        context: .
-        file: chatgpt_web/Dockerfile
+        context: ./chatgpt_web
+        file: Dockerfile
         platforms: linux/amd64
         push: true
         tags: wrhsd/chat-web:latest
